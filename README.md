@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+# 🚀 Landing ERP ReactJS Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi **Landing Page ERP** yang dibangun dengan **ReactJS**, **TypeScript**, **Vite**, dan **TailwindCSS**.  
+Project ini menggunakan **Prettier** dan **ESLint** untuk menjaga kualitas dan konsistensi kode.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ React 18
+- 🌀 Vite
+- 🖌️ TailwindCSS
+- 🎨 Framer Motion
+- 🎯 TypeScript
+- ✅ ESLint + Prettier
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🔧 Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Pastikan Anda sudah menginstall **Node.js (versi 16 atau lebih baru)** dan **npm** atau **yarn**.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone repository:
+
+```bash
+git clone https://github.com/ridwansukma/testing-logic-landing-page-erp-reactjs-web-app
+cd testing-logic-landing-page-erp-reactjs-web-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+# atau
+yarn install
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏗️ Build for Production
+
+Untuk membuat build production:
+
+```bash
+npm run build
+```
+
+Hasil build akan tersimpan di folder `dist/`.
+
+
+## ▶️ Running the App
+
+Menjalankan aplikasi dalam mode pengembangan (development):
+
+```bash
+npm run dev
+```
+
+Akses aplikasi di browser:
+
+```bash
+http://localhost:5173
 ```
